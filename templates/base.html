@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} {% endblock title %}</title>
+  </head>
+  <body>
+    <header >
+        <a href="{% url 'home'%}">picame a home  </a></header>
+        <a href="{% url 'eval2'%}">picame a produ </a></header>
+
+    {% block content %} {% endblock %}
+    <footer><p>pied de pagina</p></footer>
+  </body>
+</html>
